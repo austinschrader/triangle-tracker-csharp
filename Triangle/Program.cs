@@ -20,13 +20,26 @@ namespace Triangle
 
       // Show that the capture of side lengths worked
       Console.WriteLine("side one: " + sideOne + " side two: " + sideTwo + " side three: " + sideThree);
-      Console.WriteLine("All three are pushed!");
 
+      // Convert user input strings to ints
       int side1 = int.Parse(sideOne);
       int side2 = int.Parse(sideTwo);
       int side3 = int.Parse(sideThree);
 
-      Console.WriteLine(side1 + side2 + side3);
+      // IsTriangle Verify
+      TriangleTracker userTriangle = new TriangleTracker();
+      bool verifiedTriangle = userTriangle.IsTriangle(side1, side2, side3);
+      Console.WriteLine(verifiedTriangle);
+      if (verifiedTriangle == true)
+      {
+        string classifiedTriangle = userTriangle.ClassifyTriangle(side1, side2, side3);
+        Console.WriteLine(classifiedTriangle);
+      }
+      else
+      {
+        string classifiedTriangle = "Not a triangle!";
+        Console.WriteLine(classifiedTriangle);
+      }
     }
   }
 }

@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Threading;
+
 namespace Triangle
 {
   public class TriangleTracker
@@ -22,8 +26,10 @@ namespace Triangle
     {
       if (side1 <= (side2 + side3) && side2 <= (side3 + side1) && side3 <= (side1 + side2))
       {
+        Console.WriteLine("true");
         return true;
       }
+      Console.WriteLine("false");
       return false;
     }
 
