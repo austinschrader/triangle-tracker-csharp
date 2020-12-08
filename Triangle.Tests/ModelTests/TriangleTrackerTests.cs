@@ -7,9 +7,11 @@ namespace Triangle.Tests
   public class TriangleTrackerTests
   {
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void EvaluateTriangle_ReturnsThreeIntegersWhenPassedThreeIntegers_SideOneSideTwoSideThree()
     {
-
+      TriangleTracker testTriangleTracker = new TriangleTracker();
+      Assert.AreEqual(true, testTriangleTracker.EvaluateTriangle());
+      // Assert.AreEqual((3, 4, 6), EvaluateTriangle(3, 4, 6));
     }
   }
 }

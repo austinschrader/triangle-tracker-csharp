@@ -6,6 +6,7 @@ namespace Triangle
 {
   public class Program
   {
+
     static void Main()
     {
       Console.WriteLine("Please enter three numbers, one for each side of a triangle;");
