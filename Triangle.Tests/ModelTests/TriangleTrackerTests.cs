@@ -19,5 +19,13 @@ namespace Triangle.Tests
       TriangleTracker testTriangleTracker = new TriangleTracker();
       Assert.AreEqual("equilateral", testTriangleTracker.EvaluateTriangle(4, 4, 4));
     }
+
+    [TestMethod]
+    public void EvaluateTriangle_ChecksForScalene_StringScalene()
+    {
+      TriangleTracker testTriangleTracker = new TriangleTracker();
+      Assert.AreEqual("scalene", testTriangleTracker.EvaluateTriangle(5, 4, 3));
+    }
+
   }
 }
