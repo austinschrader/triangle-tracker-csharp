@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Triangle;
+// using Triangle;
 
 namespace Triangle.Tests
 {
@@ -10,8 +10,7 @@ namespace Triangle.Tests
     public void EvaluateTriangle_ReturnsThreeIntegersWhenPassedThreeIntegers_SideOneSideTwoSideThree()
     {
       TriangleTracker testTriangleTracker = new TriangleTracker();
-      Assert.AreEqual(true, testTriangleTracker.EvaluateTriangle());
-      // Assert.AreEqual((3, 4, 6), EvaluateTriangle(3, 4, 6));
+      Assert.AreEqual((3, 4, 6), testTriangleTracker.EvaluateTriangle(3, 4, 6));
     }
   }
 }

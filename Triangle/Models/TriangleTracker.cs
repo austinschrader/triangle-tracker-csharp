@@ -1,11 +1,10 @@
 namespace Triangle
 {
   public class TriangleTracker
-  // public class LeapYear
   {
-    public bool EvaluateTriangle()
+    public int EvaluateTriangle(int side1, int side2, int side3)
     {
-      return true;
+      return 3;
     }
   }
 }
