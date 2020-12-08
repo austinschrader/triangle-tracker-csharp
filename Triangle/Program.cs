@@ -20,6 +20,7 @@ namespace Triangle
 
       // Show that the capture of side lengths worked
       Console.WriteLine("side one: " + sideOne + " side two: " + sideTwo + " side three: " + sideThree);
+      Console.WriteLine("All three are pushed!");
 
       int side1 = int.Parse(sideOne);
       int side2 = int.Parse(sideTwo);
