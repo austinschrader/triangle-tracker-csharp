@@ -7,24 +7,31 @@ namespace Triangle.Tests
   public class TriangleTrackerTests
   {
     [TestMethod]
-    public void EvaluateTriangle_ChecksForIsosceles_StringIsosceles()
+    public void ClassifyTriangle_ChecksForIsosceles_StringIsosceles()
     {
       TriangleTracker testTriangleTracker = new TriangleTracker();
-      Assert.AreEqual("isosceles", testTriangleTracker.EvaluateTriangle(5, 5, 3));
+      Assert.AreEqual("isosceles", testTriangleTracker.ClassifyTriangle(5, 5, 3));
     }
 
     [TestMethod]
-    public void EvaluateTriangle_ChecksForEquilateral_StringEquilateral()
+    public void ClassifyTriangle_ChecksForEquilateral_StringEquilateral()
     {
       TriangleTracker testTriangleTracker = new TriangleTracker();
-      Assert.AreEqual("equilateral", testTriangleTracker.EvaluateTriangle(4, 4, 4));
+      Assert.AreEqual("equilateral", testTriangleTracker.ClassifyTriangle(4, 4, 4));
     }
 
     [TestMethod]
-    public void EvaluateTriangle_ChecksForScalene_StringScalene()
+    public void ClassifyTriangle_ChecksForScalene_StringScalene()
     {
       TriangleTracker testTriangleTracker = new TriangleTracker();
-      Assert.AreEqual("scalene", testTriangleTracker.EvaluateTriangle(5, 4, 3));
+      Assert.AreEqual("scalene", testTriangleTracker.ClassifyTriangle(5, 4, 3));
+    }
+
+    [TestMethod]
+    public void IsTriangle_ChecksIfTriangle_True()
+    {
+      TriangleTracker testTriangleTracker = new TriangleTracker();
+      Assert.AreEqual(true, testTriangleTracker.IsTriangle(4, 4, 4));
     }
 
   }

@@ -2,7 +2,7 @@ namespace Triangle
 {
   public class TriangleTracker
   {
-    public string EvaluateTriangle(int side1, int side2, int side3)
+    public string ClassifyTriangle(int side1, int side2, int side3)
     {
       if (side1 == side2 && side2 == side3)
       {
@@ -12,14 +12,17 @@ namespace Triangle
       {
         return "isosceles";
       }
-      else if (side1 != side2 && side1 != side3)
+      else
       {
         return "scalene";
       }
-      else
-      {
-        return "blah";
-      }
     }
+
+    public bool IsTriangle(int side1, int side2, int side3)
+    {
+      return true;
+    }
+
   }
+}
 }
