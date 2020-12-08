@@ -12,5 +12,12 @@ namespace Triangle.Tests
       TriangleTracker testTriangleTracker = new TriangleTracker();
       Assert.AreEqual(3 + 4 + 6, testTriangleTracker.EvaluateTriangle(3, 4, 6));
     }
+
+    [TestMethod]
+    public void EvaluateTriangle_ChecksForIsosceles_StringIsosceles() 
+    {
+      TriangleTracker testTriangleTracker = new TriangleTracker();
+      Assert.AreEqual("isosceles", testTriangleTracker.EvaluateTriangle(5, 5, 3));
+    }
   }
 }
