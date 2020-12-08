@@ -7,10 +7,10 @@ namespace Triangle.Tests
   public class TriangleTrackerTests
   {
     [TestMethod]
-    public void EvaluateTriangle_ReturnsThreeIntegersWhenPassedThreeIntegers_SideOneSideTwoSideThree()
+    public void EvaluateTriangle_ReturnsSumOfThreeIntegersWhenPassedThreeIntegers_SideOneSideTwoSideThree()
     {
       TriangleTracker testTriangleTracker = new TriangleTracker();
-      Assert.AreEqual((3, 4, 6), testTriangleTracker.EvaluateTriangle(3, 4, 6));
+      Assert.AreEqual(3 + 4 + 6, testTriangleTracker.EvaluateTriangle(3, 4, 6));
     }
   }
 }
