@@ -21,17 +21,16 @@ namespace Triangle
       // Show that the capture of side lengths worked
       Console.WriteLine("side one: " + sideOne + " side two: " + sideTwo + " side three: " + sideThree);
 
-      // Convert user input strings to ints
+      // Convert user input strings to integers
       int side1 = int.Parse(sideOne);
       int side2 = int.Parse(sideTwo);
       int side3 = int.Parse(sideThree);
 
       // IsTriangle Verify
       TriangleTracker userTriangle = new TriangleTracker();
-      bool verifiedTriangle = userTriangle.IsTriangle(side1, side2, side3);
-      Console.WriteLine(verifiedTriangle);
-      if (verifiedTriangle == true)
+      if (userTriangle.IsTriangle(side1, side2, side3))
       {
+        // Here's what we do when IS triangle
         string classifiedTriangle = userTriangle.ClassifyTriangle(side1, side2, side3);
         Console.WriteLine(classifiedTriangle);
       }
