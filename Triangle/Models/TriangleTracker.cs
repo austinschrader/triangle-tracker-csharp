@@ -24,7 +24,7 @@ namespace Triangle
       {
         return true;
       }
-      return true;
+      return false;
     }
 
   }
